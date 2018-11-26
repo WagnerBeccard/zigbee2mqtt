@@ -8,7 +8,7 @@
     "url": "git+https://github.com/Koenkk/zigbee2mqtt.git"
   },
   "engines": {
-    "node": ">=8.11 10"
+    "node": "8.11 - 10"
   },
   "keywords": [
     "xiaomi",
@@ -21,11 +21,10 @@
   ],
   "scripts": {
     "coverage": "nyc --all report --reporter=text mocha --recursive --timeout=3000",
-    "docgen": "node support/docgen.js",
+    "docgen": "node docgen/docgen.js",
     "eslint": "node_modules/.bin/eslint .",
     "start": "node index.js",
-    "test": "mocha --recursive",
-    "verify-homeassistant-mapping": "node support/verify-homeassistant-mapping.js"
+    "test": "mocha --recursive"
   },
   "author": "Koen Kanters",
   "license": "GPL-3.0",
@@ -44,9 +43,8 @@
     "queue": "*",
     "rimraf": "*",
     "winston": "2.4.2",
-    "zcl-packet": "git+https://github.com/Koenkk/zcl-packet.git#fbd8c936bbd4be0597ad3e934be0ca722b0128a6",
-    "zigbee-shepherd": "git+https://github.com/Koenkk/zigbee-shepherd.git#c3fdef2c30267573aa5821a0f2c51f21a700eff2",
-    "zigbee-shepherd-converters": "5.0.1"
+    "zigbee-shepherd": "git+https://github.com/Koenkk/zigbee-shepherd.git#ce52ac4131e2a505af6197b4a26d2b5360e4eb80",
+    "zigbee-shepherd-converters": "5.0.2"
   },
   "devDependencies": {
     "chai": "*",
@@ -54,6 +52,7 @@
     "eslint": "*",
     "eslint-config-google": "*",
     "eslint-plugin-mocha": "*",
+    "image-size": "*",
     "mocha": "*",
     "nyc": "*",
     "proxyquire": "*",
